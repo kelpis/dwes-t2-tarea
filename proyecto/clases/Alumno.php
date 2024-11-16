@@ -85,7 +85,7 @@ class Alumno extends Miembro
     {
         foreach ($this->asignaturas as $asig) {
             if ($asig->id === $asignatura->id) {
-                
+                //detiene la ejecucion si se ya esta matriculado.
                 return;
             }
         }
